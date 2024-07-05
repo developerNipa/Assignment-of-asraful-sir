@@ -1,0 +1,134 @@
+<?php
+//একজন ইউজারের বিয়ের সঠিক বয়স বের করা
+$username="Miss Anishu";
+$year=2005;
+$gender="Female";
+//get user age
+$Age= 2024-$year;
+
+
+//find marriage age
+$marriageAge=null;
+$somvodon=null;
+
+
+  switch($gender){
+
+    case'male':
+      $marriageAge=21;
+      $somvodon= 'vaiyaa';
+      break;
+      case'Female':
+        $marriageAge=18;
+        $somvodon= 'apuu';
+        break;
+  default:
+  
+  $marriageAge=21;
+  }
+//now send message
+
+if($Age>=$marriageAge) {   
+  echo"Hello {$username} {$somvodon},  you are ready for marriage";
+}
+else{ echo"Hello {$username} {$somvodon},  you are  not  ready for marriage" ;}
+
+
+//গ্রেডিং এপলিকেসন Grade and GPA  বলে দিবে 
+
+$marks=54;
+
+if( $marks >=0 &&  $marks <32 ){ echo " F <br> ";}
+
+ else if ($marks >=33 && $marks <=39) { echo" D <br>";
+    
+} 
+else if ($marks >=40 && $marks <=49) { echo" B <br>";
+    
+} 
+else if ($marks >=50 && $marks <=59) { echo"  <br> <br>  <br>  YOU GOT  B+ ";
+    
+}
+else if ($marks >=60 && $marks <=69) { echo"  <br> <br>  <br>  YOU GOT A- ";
+    
+}
+else if ($marks >=70 && $marks <=79) { echo"  <br><br>  <br>  YOU GOT A ";
+    
+}
+else if ($marks >=80 && $marks <=100) { echo" <br> <br>  <br>  YOU GOT A+ ";
+    
+}
+
+else{ echo " Invalid "; }
+
+// curenncy 
+
+$amount=600;
+$currency='pound';
+//get currency rate
+$rate=null;
+
+switch($currency){
+
+  case 'doller';
+  $rate=117;
+  break;
+  case 'euro';
+  $rate=127;
+  break;
+
+  case 'rupee';
+  $rate=1.47;
+  break;
+
+  case 'pound';
+  $rate=150;
+  break;
+  default :
+  $rate=117;
+
+
+}
+//set out put
+
+$totalAmount = $amount * $rate ;
+
+echo  "  <br> <br> {$amount} {$currency} =  {$totalAmount} BDT " ;
+
+
+//BMI  calculator
+
+
+/* 
+// Function to calculate BMI
+function calculateBMI($weight, $height) {
+    // Formula for BMI: weight (kg) / (height (m))^2
+    $bmi = $weight / ($height * $height);
+    return $bmi;
+}
+
+// Example usage
+$weight_kg = 70; // weight in kilograms
+$height_m = 1.75; // height in meters
+
+// Calculate BMI
+$bmi = calculateBMI($weight_kg, $height_m);
+
+// Print the result
+echo "  BMI is: " . number_format($bmi, 1);
+
+// Interpretation of BMI
+if ($bmi < 18.5) {
+    echo "  <br> <br> (Underweight)";
+} elseif ($bmi >= 18.5 && $bmi < 25) {
+    echo " <br> <br> (Normal weight)";
+} elseif ($bmi >= 25 && $bmi < 30) {
+    echo " <br> <br>  (Overweight)";
+} else {
+    echo " <br> <br>  sss(Obese)";
+    
+}
+*/
+
+
+?>
